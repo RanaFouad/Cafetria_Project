@@ -97,9 +97,9 @@ session_start();
 			<?php
 					
 					echo "<select class='form-control' name='category' >";
-						$servername = "localhost";
-						$username = "root";
-						$password = "";
+						$servername = "127.7.18.2:3306";
+						$username = "adminiGMhwvw";
+						$password = "lpq88Pcq7He6";
 						$dbname = "cafetria";
 
 						// Create connection
