@@ -242,6 +242,7 @@ session_start();
 	</footer>
 </div>
 	<script>
+	
 	$(document).ready(function(){
 		// Initialize Tooltip
 		$('[data-toggle="tooltip"]').tooltip(); 
