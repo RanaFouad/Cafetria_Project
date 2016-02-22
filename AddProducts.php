@@ -96,7 +96,7 @@ session_start();
 				
 			<?php
 					
-					echo "<select class='form-control' name='category' >";
+					echo "<select class='form-control' name='category' id='category' >";
 						$servername = "127.7.18.2:3306";
 						$username = "adminiGMhwvw";
 						$password = "lpq88Pcq7He6";
