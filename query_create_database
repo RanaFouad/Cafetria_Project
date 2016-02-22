@@ -1,0 +1,35 @@
+# create data base
+
+1-create database cafetria;
+
+2-use cafetria;
+
+# create room tabel
+
+3-create table room (room_id int(10) unsigned auto_increment primary key,room_number int(10) unsigned not null);
+
+# create user table
+
+4-create table users (user_id int(10) unsigned auto_increment primary key,user_name varchar(50) not null,user_email varchar(50) not null,password varchar(50) not null,picture varchar(50) not null,ext int(10) unsigned not null,room_id int(10) unsigned,FOREIGN KEY (room_id)  REFERENCES room(room_id) );  
+
+# create category table
+
+5-create table category (category_id int(10) unsigned auto_increment primary key,category_name varchar(50) not null); 
+
+# create product table
+
+6-create table product (product_id int(10) unsigned auto_increment primary key,product_name varchar(50) not null,product_picture varchar(50) not null,product_amount varchar(50));
+
+7-alter table product add category_id int(10) unsigned;
+
+8-alter table product add foreign key (category_id) references category(category_id);
+
+# create order user table
+
+9-create table order_user (order_id int(10) unsigned auto_increment primary key,order_date date,notes varchar(50),user_id int(10) unsigned,foreign key (user_id) references users(user_id));
+
+create order product table
+
+10-create table order_product (order_id int(10) unsigned,foreign key (order_id) references order_user(order_id),product_id int(10) unsigned,foreign key (product_id) references product(product_id),amount int(10) unsigned not null);
+
+
