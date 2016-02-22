@@ -23,12 +23,12 @@ $(document).ready(function(){
 					return false;
 				}
 			}
-
-			if($('#category').val() == null || $('#category').val() == ""){
+			/*
+			//if($('#category').val() == null || $('#category').val() == ""){
 				alert("Please Enter product category");
 				return false;
 			}
-
+			*/
 			if($('#product-picture').val() == null || $('#product-picture').val() == ""){
 				alert("Please Enter product picture");
 				return false;
