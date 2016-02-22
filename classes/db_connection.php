@@ -4,7 +4,7 @@ class db_connection
 
     private $_connection;
     private static $_instance; //The single instance
-    private $_host = "localhost";
+    private $_host = "127.7.18.2:3306";
     private $_username = "adminiGMhwvw";
     private $_password = "lpq88Pcq7He6";
     private $_database = "cafetria";
