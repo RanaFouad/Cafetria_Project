@@ -119,10 +119,10 @@ session_start();
               <div class="controls">
 			  
 	  <?php
-					$servername = "localhost";
-					$username = "root";
-					$password = "";
-					$dbname = "cafetria";
+						$servername = "127.7.18.2:3306";
+						$username = "adminiGMhwvw";
+						$password = "lpq88Pcq7He6";
+						$dbname = "cafetria";
 
 					// Create connection
 					$conn = mysqli_connect($servername, $username, $password, $dbname);
